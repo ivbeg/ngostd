@@ -1,0 +1,145 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "definitions": {},
+  "id": "http://infoculture.ru/ngo-projects.json",
+  "properties": {
+    "id": {
+      "default": "infoculture-7702389486",
+      "description": "Уникальный идентификатор проекта",
+      "id": "/properties/id",
+      "title": "The id schema",
+      "type": "string"
+    },
+    "inn": {
+      "default": "7702389486",
+      "description": "ИНН организации формирующей отчет",
+      "id": "/properties/inn",
+      "title": "The inn schema",
+      "type": "string"
+    },
+    "name": {
+      "default": "\u0410\u041d\u041e \u0418\u043d\u0444\u043e\u043a\u0443\u043b\u044c\u0442\u0443\u0440\u0430",
+      "description": "Наименование организации формирующей отчет",
+      "id": "/properties/name",
+      "title": "The name schema",
+      "type": "string"
+    },
+    "projects": {
+      "id": "/properties/projects",
+      "items": {
+        "id": "/properties/projects/items",
+        "properties": {
+          "category": {
+            "id": "/properties/projects/items/properties/category",
+            "items": {
+              "id": "/properties/projects/items/properties/category/items",
+              "properties": {
+                "code": {
+                  "default": "0007",
+                  "description": "Код категории по справочнику деятельности НКО",
+                  "id": "/properties/projects/items/properties/category/items/properties/code",
+                  "title": "The code schema",
+                  "type": "string"
+                },
+                "name": {
+                  "default": "\u041e\u0442\u043a\u0440\u044b\u0442\u043e\u0441\u0442\u044c \u0438 \u043f\u0440\u043e\u0437\u0440\u0430\u0447\u043d\u043e\u0441\u0442\u044c",
+                  "description": "Наименование деятельности по справочнику деятельности НКО",
+                  "id": "/properties/projects/items/properties/category/items/properties/name",
+                  "title": "The name schema",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "description": {
+            "default": "\u041f\u0440\u043e\u0435\u043a\u0442 \u0441\u043e\u0437\u0434\u0430\u043d \u0432 \u0446\u0435\u043b\u044f\u0445 \u0430\u0440\u0445\u0438\u0432\u0430\u0446\u0438\u0438 \u0438\u0441\u0447\u0435\u0437\u0430\u044e\u0449\u0438\u0445 \u0441\u0430\u0439\u0442\u043e\u0432 \u0420\u0443\u043d\u0435\u0442\u0430. \u0417\u0430\u0434\u0430\u0447\u0438 \u0432\u043f\u0440\u043e\u0435\u043a\u0442\u0430 \u0432\u043b\u044e\u0447\u0430\u044e\u0442: \u0441\u0431\u043e\u0440 \u043a\u043e\u043b\u043b\u0435\u043a\u0446\u0438\u0438 \u0441\u0430\u0439\u0442\u043e\u0432",
+            "description": "Краткое описание проекта",
+            "id": "/properties/projects/items/properties/description",
+            "title": "The description schema",
+            "type": "string"
+          },
+          "execution_date": {
+            "default": "02.2017-",
+            "description": "Сроки исполнения проекта в формате ММ.ГГГГ-ММ.ГГГГ, допустимо ММ.ГГГГ- без конечной даты",
+            "id": "/properties/projects/items/properties/execution_date",
+            "title": "The execution_date schema",
+            "type": "string"
+          },
+          "funding_org": {
+            "id": "/properties/projects/items/properties/funding_org",
+            "properties": {
+              "inn": {
+                "default": "0000000000",
+                "description": "ИНН финансирующей организации. 0000000000 если краудфандинг",
+                "id": "/properties/projects/items/properties/funding_org/properties/inn",
+                "title": "The inn schema",
+                "type": "string"
+              },
+              "name": {
+                "default": "\u041a\u0440\u0430\u0443\u0434\u0444\u0430\u043d\u0434\u0438\u043d\u0433",
+                "description": "Название финансирующей организации.",
+                "id": "/properties/projects/items/properties/funding_org/properties/name",
+                "title": "The name schema",
+                "type": "string"
+              }
+            },
+            "type": "object"
+          },
+          "id": {
+            "default": "ik-webarchive",
+            "description": "Уникальный идентификатор проекта (уникален в рамках списка проектов организации).",
+            "id": "/properties/projects/items/properties/id",
+            "title": "The id schema",
+            "type": "string"
+          },
+          "name": {
+            "default": "\u041d\u0430\u0446\u0438\u043e\u043d\u0430\u043b\u044c\u043d\u044b\u0439 \u0446\u0438\u0444\u0440\u043e\u0432\u043e\u0439 \u0430\u0440\u0445\u0438\u0432 \u0420\u043e\u0441\u0441\u0438\u0438",
+            "description": "Название проекта.",
+            "id": "/properties/projects/items/properties/name",
+            "title": "The name schema",
+            "type": "string"
+          },
+          "receiver_org": {
+            "id": "/properties/projects/items/properties/receiver_org",
+            "properties": {
+              "inn": {
+                "default": "7702389486",
+                "description": "ИНН организации получателя средств.",
+                "id": "/properties/projects/items/properties/receiver_org/properties/inn",
+                "title": "The inn schema",
+                "type": "string"
+              },
+              "name": {
+                "default": "\u0410\u041d\u041e \u0418\u043d\u0444\u043e\u043a\u0443\u043b\u044c\u0442\u0443\u0440\u0430",
+                "description": "Юридическое наименование организации получателя средств.",
+                "id": "/properties/projects/items/properties/receiver_org/properties/name",
+                "title": "The name schema",
+                "type": "string"
+              }
+            },
+            "type": "object"
+          },
+          "report": {
+            "default": null,
+            "description": "Ссылка на публичный отчет о проекте.",
+            "id": "/properties/projects/items/properties/report",
+            "title": "The report schema",
+            "type": "null"
+          },
+          "summ": {
+            "default": 14000,
+            "description": "Сумма в рублях полученная от данной финансирующей организации.",
+            "id": "/properties/projects/items/properties/summ",
+            "title": "The summ schema",
+            "type": "integer"
+          }
+        },
+        "type": "object"
+      },
+      "type": "array"
+    }
+  },
+  "type": "object"
+}

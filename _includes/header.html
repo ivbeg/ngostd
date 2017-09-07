@@ -1,0 +1,38 @@
+{% assign url_parts = page.url | split: '/' %}
+{% assign url_last = url_parts |last  %}
+
+<header class="site-header">
+  <a href="#menu" class="show-menu"><span class="text">Open the menu</span></a>
+  <a class="site-title" href="{{ site.baseurl }}/">{{ site.short_title }}</a>
+</header>
+
+<nav id="menu">
+  <ul>
+    <li>
+      <a href="{{ site.baseurl }}/">Главная</a>
+    </li>
+
+    <li {% if url_parts contains 'open' %}class="Selected"{% endif %}>
+      <a href="{{ site.baseurl }}/open/">Открытость НКО</a>
+<!--       <ul>
+        <li {% if url_last == 'pages' %}class="Selected"{% endif %}>
+          <a href="{{ site.baseurl }}/pages/">Page One</a>
+        </li>
+        <li {% if url_last == 'page-two' %}class="Selected"{% endif %}>
+          <a href="{{ site.baseurl }}/pages/page-two/">Page Two</a>
+        </li>
+        <li {% if url_last == 'page-three' %}class="Selected"{% endif %}>
+          <a href="{{ site.baseurl }}/pages/page-three/">Page Three</a>
+        </li>
+      </ul> -->
+    </li>
+    
+    <li {% if url_parts contains 'tech' %}class="Selected"{% endif %}>
+      <a href="{{ site.baseurl }}/tech/">Технологический стандарт</a>
+    </li>
+    
+    <li {% if url_last ==  'tools' %}class="Selected"{% endif %}>
+      <a href="{{ site.baseurl }}/tools/">Инструменты</a>
+    </li>
+
+</nav>
