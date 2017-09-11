@@ -1342,7 +1342,7 @@ html.mm-background .mm-page,
     text-align:center;
 
     .wrapper {
-      padding: 20px $base-spacing 115px $base-spacing;
+      padding: 100px $base-spacing 100px $base-spacing;
       max-height:333px;
 
       h1 {
@@ -1352,6 +1352,7 @@ html.mm-background .mm-page,
         margin-bottom:10px;
         position:absolute;
         left:-999px;
+        color: white;
 
         @include media($medium-screen) {
           position:static;
