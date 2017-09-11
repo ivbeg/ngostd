@@ -31,19 +31,19 @@
   <ul>
     {% if site.github_repo and page.edit %}
     <li class="edit tooltip-item">
-      Improve this page
+      Улучшить страницу
       
       <span class="tooltip">
-        <a href="https://github.com/{{ site.github_username }}/{{ site.github_repo }}/edit/gh-pages/{{page.path}}" class="github" rel="external">Edit on Github</a>
-        <a href="{{ "/contribute/" | prepend: site.baseurl }}" target="_blank">Help and instructions</a>
+        <a href="https://github.com/{{ site.github_username }}/{{ site.github_repo }}/edit/gh-pages/{{page.path}}" class="github" rel="external">Редактировать на Github</a>
+        <a href="{{ "/contribute/" | prepend: site.baseurl }}" target="_blank">Помощь</a>
       </span>
     </li>
     {% endif %}
     {% if active_section.translate_link %}
     <li class="translate tooltip-item">
-      Translate this page
+      Перевести страницу
       <span class="tooltip">
-        <a href="{{ "/contribute/translate-guide" | prepend: site.baseurl }}" target="_blank">Translation guide</a>
+        <a href="{{ "/contribute/translate-guide" | prepend: site.baseurl }}" target="_blank">Инструкции по переводу</a>
       </span>
     </li>
     {% endif %}
@@ -51,7 +51,7 @@
     {% if site.paypal %}
 
     <li class="donate tooltip-item">
-      Donate
+      Поддержать проект
       
       <span class="tooltip">
         <p>If you have found this useful and would like to support our work please consider making a small donation.</p>
@@ -86,28 +86,28 @@
     </li>
     {% endif %}
     <li class="share tooltip-item">
-      Share
+      Поделиться
       
       <span class="tooltip">
-        <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" class="facebook" rel="external">Share on Facebook</a>
-        <a href="https://twitter.com/home?status={{page.title }}: {{ site.url }}{{ page.url }}" class="twitter" rel="external">Share on Twitter</a>
+        <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" class="facebook" rel="external">Поделиться в Facebook</a>
+        <a href="https://twitter.com/home?status={{page.title }}: {{ site.url }}{{ page.url }}" class="twitter" rel="external">Поделиться в Twitter</a>
       </span>
     </li>
     {% if page.section == 'resources' %}
     <li class="add tooltip-item">
-      Add a resource
+      Добавить источник
       
       <span class="tooltip">
-        <a href="{{ "/contribute/add-resource/" | prepend: site.baseurl }}" target="_blank">Help and instructions</a>
+        <a href="{{ "/contribute/add-resource/" | prepend: site.baseurl }}" target="_blank">Помощь</a>
       </span>
     </li>
     {% endif %}
     {% if page.section == 'solutions-landing' %}
     <li class="add tooltip-item">
-      Add a solution
+      Добавить решение
       
       <span class="tooltip">
-        <a href="{{ "/contribute/" | prepend: site.baseurl }}" target="_blank">Help and instructions</a>
+        <a href="{{ "/contribute/" | prepend: site.baseurl }}" target="_blank">Помощь</a>
       </span>
     </li>
     {% endif %}
