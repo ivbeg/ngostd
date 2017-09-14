@@ -6,10 +6,10 @@
 
       {% if site.supporters %}
       <div class="supporters">
-        <h6>Supported by</h6>
+        <h6>При поддержке</h6>
         {% for supporter in site.supporters %}
           {% if supporter.footer_logo %}
-          <a{% if supporter.url %} href="{{ supporter.url }}" rel="external"{% endif %}><img src="{{ site.baseurl }}/img/supporters/{{ supporter.footer_logo }}" alt="{{ supporter.name }}"></a>
+          <a{% if supporter.url %} href="{{ supporter.url }}" rel="external"{% endif %}><img src="{{ site.baseurl }}/img/supporters/{{ supporter.footer_logo }}" alt="{{ supporter.name }}" title="{{ supporter.name }}"></a>
           {% endif %}
         {% endfor %}
       </div>
@@ -28,7 +28,7 @@
     <div class="tertiary">
       {% if site.related_projects %}
       <div>
-        <h6>Related Projects</h6>
+        <h6>Сторонние проекты</h6>
         <ul>
           {% for project in site.related_projects %}
           <li><a href="{{ project.link }}">{{ project.name }}</a></li>
@@ -38,7 +38,7 @@
       {% endif %}
       <ul class="icons">
         {% if site.paypal %}
-        <li class="donate"><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business={{ site.paypal }}&lc=GB&item_name={{ site.short_title }}%20Donation%20to%20Open%20Knowledge&no_note=0&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHostedGuest" rel="external"><span>Donate</span></a></li>
+        <li class="donate"><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business={{ site.paypal }}&lc=GB&item_name={{ site.short_title }}%20Donation%20to%20Open%20Knowledge&no_note=0&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHostedGuest" rel="external"><span>Поддержать нас</span></a></li>
         {% endif %}
         {% if site.contact %}
         <li class="discuss"><a href="{{ site.contact }}" rel="external"><span>Contact</span></a></li>
