@@ -1,0 +1,139 @@
+{
+  "id": "infoculture",
+  "name": "АНО Инфокультура",
+  "website": "https://infoculture.ru",
+  "charter_url": "https://infoculture.ru/ic_charter.pdf",
+  "contacts": {
+    "phone": "+7 (499) 500-96-58",
+    "email": "infoculture@infoculture.ru"
+  },
+  "inn": "7702389486",
+  "ogrn": "1157700014086",
+  "address" : "107031, г Москва, пер Кисельный М, 1/9, оф 402, пом. 2",
+  "director" : "Бегтин Иван Викторович",
+  "management_body": "директор",
+  "management_url": "https://www.infoculture.ru/team-member/begtin-ivan/",
+  "team_url": "https://www.infoculture.ru/team/",
+  "mission" : "Развитие и поддержка распространения информационной культуры",
+  "team" : [
+    {"name" : "Бегтин Иван Викторович",
+      "bio" : "Родился, жил, работает"
+    },
+    {"name" : "Поминова Ксения Вадимовна",
+      "bio" : "Родилась, жила, работает"
+    },
+    {"name" : "Цветкова Алиса",
+      "bio" : "Родилась, жила, работает"
+    },
+    {"name" : "Орлова Ксения",
+      "bio" : "Родилась, жила, работает"
+    }
+  ],
+  "projects": [
+    {
+      "id": "ik-webarchive",
+      "name": "Национальный цифровой архив России",
+      "funding_org": {
+        "inn": "0000000000",
+        "name": "Краудфандинг"
+      },
+      "receiver_org": {
+        "inn": "7702389486",
+        "name": "АНО Инфокультура"
+      },
+      "description": "Проект создан в целях архивации исчезающих сайтов Рунета. Задачи впроекта влючают: сбор коллекции сайтов",
+      "summ": 14000,
+      "category": [
+        {
+          "code": "0007",
+          "name": "Открытость и прозрачность"
+        },
+        {
+          "code": "0011",
+          "name": "Культурное наследие"
+        }
+      ],
+      "execution_date": "02.2017-",
+      "report": null
+    },
+    {
+      "id": "ik-plainrussian",
+      "name": "Простой русский язык",
+      "funding_org": {
+        "inn": "0000000000",
+        "name": "Краудфандинг"
+      },
+      "receiver_org": {
+        "inn": "7702389486",
+        "name": "АНО Инфокультура"
+      },
+      "description": "Сервис оценки простоты русского языка, https://plainrussian.ru",
+      "summ": 3500,
+      "category": [
+        {
+          "code": "0007",
+          "name": "Открытость и прозрачность"
+        }
+      ],
+      "execution_date": "01.2016-",
+      "report": null
+    }
+  ],
+  "directions": [
+    {
+      "code": "0087",
+      "name": "Понятный язык"
+    },
+    {
+      "code": "0007",
+      "name": "Открытые данные"
+    },
+    {
+      "code": "0071",
+      "name": "Открытость государственных расходов"
+    },
+    {
+      "code": "0081",
+      "name": "Цифровая архивация"
+    }
+  ],
+  "reports": [
+    {
+      "year": "2016",
+      "report_type": "full",
+      "name": "Годовой отчет за 2016 год",
+      "url": "https://infoculture.ru/reports/2016.pdf"
+    },
+    {
+      "year": "2015",
+      "report_type": "full",
+      "name": "Годовой отчет за 2015 год",
+      "url": "https://infoculture.ru/reports/2015.pdf"
+    }
+  ],
+  "funding": [
+    {
+      "year": "2016",
+      "source": "Контракты",
+      "summ": 10000
+    },
+    {
+      "year": "2016",
+      "source": "Гранты",
+      "summ": 100000
+    }
+  ],
+  "funding_policy" : null,
+  "fin_balances" : [
+    {
+      "year": "2016",
+      "name": "Бухгалтерский баланс за 2016 год",
+      "url": "https://infoculture.ru/balances/2016.pdf"
+    },
+    {
+      "year": "2015",
+      "name": "Бухгалтерский баланс за 2015 год",
+      "url": "https://infoculture.ru/balances/2015.pdf"
+    }
+  ]
+}

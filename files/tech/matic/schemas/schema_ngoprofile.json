@@ -1,0 +1,383 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "definitions": {},
+  "id": "http://infoculture.ru/ngo-projects.json",
+  "properties": {
+    "address": {
+      "default": "107031, \u0433 \u041c\u043e\u0441\u043a\u0432\u0430, \u043f\u0435\u0440 \u041a\u0438\u0441\u0435\u043b\u044c\u043d\u044b\u0439 \u041c, 1/9, \u043e\u0444 402, \u043f\u043e\u043c. 2",
+      "description": "An explanation about the purpose of this instance.",
+      "id": "/properties/address",
+      "title": "The address schema",
+      "type": "string"
+    },
+    "charter_url": {
+      "default": "https://infoculture.ru/ic_charter.pdf",
+      "description": "An explanation about the purpose of this instance.",
+      "id": "/properties/charter_url",
+      "title": "The charter_url schema",
+      "type": "string"
+    },
+    "contacts": {
+      "id": "/properties/contacts",
+      "properties": {
+        "email": {
+          "default": "infoculture@infoculture.ru",
+          "description": "An explanation about the purpose of this instance.",
+          "id": "/properties/contacts/properties/email",
+          "title": "The email schema",
+          "type": "string"
+        },
+        "phone": {
+          "default": "+7 (499) 500-96-58",
+          "description": "An explanation about the purpose of this instance.",
+          "id": "/properties/contacts/properties/phone",
+          "title": "The phone schema",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "directions": {
+      "id": "/properties/directions",
+      "items": {
+        "id": "/properties/directions/items",
+        "properties": {
+          "code": {
+            "default": "0087",
+            "description": "An explanation about the purpose of this instance.",
+            "id": "/properties/directions/items/properties/code",
+            "title": "The code schema",
+            "type": "string"
+          },
+          "name": {
+            "default": "\u041f\u043e\u043d\u044f\u0442\u043d\u044b\u0439 \u044f\u0437\u044b\u043a",
+            "description": "An explanation about the purpose of this instance.",
+            "id": "/properties/directions/items/properties/name",
+            "title": "The name schema",
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "director": {
+      "default": "\u0411\u0435\u0433\u0442\u0438\u043d \u0418\u0432\u0430\u043d \u0412\u0438\u043a\u0442\u043e\u0440\u043e\u0432\u0438\u0447",
+      "description": "An explanation about the purpose of this instance.",
+      "id": "/properties/director",
+      "title": "The director schema",
+      "type": "string"
+    },
+    "fin_balances": {
+      "id": "/properties/fin_balances",
+      "items": {
+        "id": "/properties/fin_balances/items",
+        "properties": {
+          "name": {
+            "default": "\u0411\u0443\u0445\u0433\u0430\u043b\u0442\u0435\u0440\u0441\u043a\u0438\u0439 \u0431\u0430\u043b\u0430\u043d\u0441 \u0437\u0430 2016 \u0433\u043e\u0434",
+            "description": "An explanation about the purpose of this instance.",
+            "id": "/properties/fin_balances/items/properties/name",
+            "title": "The name schema",
+            "type": "string"
+          },
+          "url": {
+            "default": "https://infoculture.ru/balances/2016.pdf",
+            "description": "An explanation about the purpose of this instance.",
+            "id": "/properties/fin_balances/items/properties/url",
+            "title": "The url schema",
+            "type": "string"
+          },
+          "year": {
+            "default": "2016",
+            "description": "An explanation about the purpose of this instance.",
+            "id": "/properties/fin_balances/items/properties/year",
+            "title": "The year schema",
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "funding": {
+      "id": "/properties/funding",
+      "items": {
+        "id": "/properties/funding/items",
+        "properties": {
+          "source": {
+            "default": "\u041a\u043e\u043d\u0442\u0440\u0430\u043a\u0442\u044b",
+            "description": "An explanation about the purpose of this instance.",
+            "id": "/properties/funding/items/properties/source",
+            "title": "The source schema",
+            "type": "string"
+          },
+          "summ": {
+            "default": 10000,
+            "description": "An explanation about the purpose of this instance.",
+            "id": "/properties/funding/items/properties/summ",
+            "title": "The summ schema",
+            "type": "integer"
+          },
+          "year": {
+            "default": "2016",
+            "description": "An explanation about the purpose of this instance.",
+            "id": "/properties/funding/items/properties/year",
+            "title": "The year schema",
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "funding_policy": {
+      "default": null,
+      "description": "An explanation about the purpose of this instance.",
+      "id": "/properties/funding_policy",
+      "title": "The funding_policy schema",
+      "type": "null"
+    },
+    "id": {
+      "default": "infoculture",
+      "description": "An explanation about the purpose of this instance.",
+      "id": "/properties/id",
+      "title": "The id schema",
+      "type": "string"
+    },
+    "inn": {
+      "default": "7702389486",
+      "description": "An explanation about the purpose of this instance.",
+      "id": "/properties/inn",
+      "title": "The inn schema",
+      "type": "string"
+    },
+    "management_body": {
+      "default": "\u0434\u0438\u0440\u0435\u043a\u0442\u043e\u0440",
+      "description": "An explanation about the purpose of this instance.",
+      "id": "/properties/management_body",
+      "title": "The management_body schema",
+      "type": "string"
+    },
+    "management_url": {
+      "default": "https://www.infoculture.ru/team-member/begtin-ivan/",
+      "description": "An explanation about the purpose of this instance.",
+      "id": "/properties/management_url",
+      "title": "The management_url schema",
+      "type": "string"
+    },
+    "mission": {
+      "default": "\u0420\u0430\u0437\u0432\u0438\u0442\u0438\u0435 \u0438 \u043f\u043e\u0434\u0434\u0435\u0440\u0436\u043a\u0430 \u0440\u0430\u0441\u043f\u0440\u043e\u0441\u0442\u0440\u0430\u043d\u0435\u043d\u0438\u044f \u0438\u043d\u0444\u043e\u0440\u043c\u0430\u0446\u0438\u043e\u043d\u043d\u043e\u0439 \u043a\u0443\u043b\u044c\u0442\u0443\u0440\u044b",
+      "description": "An explanation about the purpose of this instance.",
+      "id": "/properties/mission",
+      "title": "The mission schema",
+      "type": "string"
+    },
+    "name": {
+      "default": "\u0410\u041d\u041e \u0418\u043d\u0444\u043e\u043a\u0443\u043b\u044c\u0442\u0443\u0440\u0430",
+      "description": "An explanation about the purpose of this instance.",
+      "id": "/properties/name",
+      "title": "The name schema",
+      "type": "string"
+    },
+    "ogrn": {
+      "default": "1157700014086",
+      "description": "An explanation about the purpose of this instance.",
+      "id": "/properties/ogrn",
+      "title": "The ogrn schema",
+      "type": "string"
+    },
+    "projects": {
+      "id": "/properties/projects",
+      "items": {
+        "id": "/properties/projects/items",
+        "properties": {
+          "category": {
+            "id": "/properties/projects/items/properties/category",
+            "items": {
+              "id": "/properties/projects/items/properties/category/items",
+              "properties": {
+                "code": {
+                  "default": "0007",
+                  "description": "An explanation about the purpose of this instance.",
+                  "id": "/properties/projects/items/properties/category/items/properties/code",
+                  "title": "The code schema",
+                  "type": "string"
+                },
+                "name": {
+                  "default": "\u041e\u0442\u043a\u0440\u044b\u0442\u043e\u0441\u0442\u044c \u0438 \u043f\u0440\u043e\u0437\u0440\u0430\u0447\u043d\u043e\u0441\u0442\u044c",
+                  "description": "An explanation about the purpose of this instance.",
+                  "id": "/properties/projects/items/properties/category/items/properties/name",
+                  "title": "The name schema",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "description": {
+            "default": "\u041f\u0440\u043e\u0435\u043a\u0442 \u0441\u043e\u0437\u0434\u0430\u043d \u0432 \u0446\u0435\u043b\u044f\u0445 \u0430\u0440\u0445\u0438\u0432\u0430\u0446\u0438\u0438 \u0438\u0441\u0447\u0435\u0437\u0430\u044e\u0449\u0438\u0445 \u0441\u0430\u0439\u0442\u043e\u0432 \u0420\u0443\u043d\u0435\u0442\u0430. \u0417\u0430\u0434\u0430\u0447\u0438 \u0432\u043f\u0440\u043e\u0435\u043a\u0442\u0430 \u0432\u043b\u044e\u0447\u0430\u044e\u0442: \u0441\u0431\u043e\u0440 \u043a\u043e\u043b\u043b\u0435\u043a\u0446\u0438\u0438 \u0441\u0430\u0439\u0442\u043e\u0432",
+            "description": "An explanation about the purpose of this instance.",
+            "id": "/properties/projects/items/properties/description",
+            "title": "The description schema",
+            "type": "string"
+          },
+          "execution_date": {
+            "default": "02.2017-",
+            "description": "An explanation about the purpose of this instance.",
+            "id": "/properties/projects/items/properties/execution_date",
+            "title": "The execution_date schema",
+            "type": "string"
+          },
+          "funding_org": {
+            "id": "/properties/projects/items/properties/funding_org",
+            "properties": {
+              "inn": {
+                "default": "0000000000",
+                "description": "An explanation about the purpose of this instance.",
+                "id": "/properties/projects/items/properties/funding_org/properties/inn",
+                "title": "The inn schema",
+                "type": "string"
+              },
+              "name": {
+                "default": "\u041a\u0440\u0430\u0443\u0434\u0444\u0430\u043d\u0434\u0438\u043d\u0433",
+                "description": "An explanation about the purpose of this instance.",
+                "id": "/properties/projects/items/properties/funding_org/properties/name",
+                "title": "The name schema",
+                "type": "string"
+              }
+            },
+            "type": "object"
+          },
+          "id": {
+            "default": "ik-webarchive",
+            "description": "An explanation about the purpose of this instance.",
+            "id": "/properties/projects/items/properties/id",
+            "title": "The id schema",
+            "type": "string"
+          },
+          "name": {
+            "default": "\u041d\u0430\u0446\u0438\u043e\u043d\u0430\u043b\u044c\u043d\u044b\u0439 \u0446\u0438\u0444\u0440\u043e\u0432\u043e\u0439 \u0430\u0440\u0445\u0438\u0432 \u0420\u043e\u0441\u0441\u0438\u0438",
+            "description": "An explanation about the purpose of this instance.",
+            "id": "/properties/projects/items/properties/name",
+            "title": "The name schema",
+            "type": "string"
+          },
+          "receiver_org": {
+            "id": "/properties/projects/items/properties/receiver_org",
+            "properties": {
+              "inn": {
+                "default": "7702389486",
+                "description": "An explanation about the purpose of this instance.",
+                "id": "/properties/projects/items/properties/receiver_org/properties/inn",
+                "title": "The inn schema",
+                "type": "string"
+              },
+              "name": {
+                "default": "\u0410\u041d\u041e \u0418\u043d\u0444\u043e\u043a\u0443\u043b\u044c\u0442\u0443\u0440\u0430",
+                "description": "An explanation about the purpose of this instance.",
+                "id": "/properties/projects/items/properties/receiver_org/properties/name",
+                "title": "The name schema",
+                "type": "string"
+              }
+            },
+            "type": "object"
+          },
+          "report": {
+            "default": null,
+            "description": "An explanation about the purpose of this instance.",
+            "id": "/properties/projects/items/properties/report",
+            "title": "The report schema",
+            "type": "null"
+          },
+          "summ": {
+            "default": 14000,
+            "description": "An explanation about the purpose of this instance.",
+            "id": "/properties/projects/items/properties/summ",
+            "title": "The summ schema",
+            "type": "integer"
+          }
+        },
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "reports": {
+      "id": "/properties/reports",
+      "items": {
+        "id": "/properties/reports/items",
+        "properties": {
+          "name": {
+            "default": "\u0413\u043e\u0434\u043e\u0432\u043e\u0439 \u043e\u0442\u0447\u0435\u0442 \u0437\u0430 2016 \u0433\u043e\u0434",
+            "description": "An explanation about the purpose of this instance.",
+            "id": "/properties/reports/items/properties/name",
+            "title": "The name schema",
+            "type": "string"
+          },
+          "report_type": {
+            "default": "full",
+            "description": "An explanation about the purpose of this instance.",
+            "id": "/properties/reports/items/properties/report_type",
+            "title": "The report_type schema",
+            "type": "string"
+          },
+          "url": {
+            "default": "https://infoculture.ru/reports/2016.pdf",
+            "description": "An explanation about the purpose of this instance.",
+            "id": "/properties/reports/items/properties/url",
+            "title": "The url schema",
+            "type": "string"
+          },
+          "year": {
+            "default": "2016",
+            "description": "An explanation about the purpose of this instance.",
+            "id": "/properties/reports/items/properties/year",
+            "title": "The year schema",
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "team": {
+      "id": "/properties/team",
+      "items": {
+        "id": "/properties/team/items",
+        "properties": {
+          "bio": {
+            "default": "\u0420\u043e\u0434\u0438\u043b\u0441\u044f, \u0436\u0438\u043b, \u0440\u0430\u0431\u043e\u0442\u0430\u0435\u0442",
+            "description": "An explanation about the purpose of this instance.",
+            "id": "/properties/team/items/properties/bio",
+            "title": "The bio schema",
+            "type": "string"
+          },
+          "name": {
+            "default": "\u0411\u0435\u0433\u0442\u0438\u043d \u0418\u0432\u0430\u043d \u0412\u0438\u043a\u0442\u043e\u0440\u043e\u0432\u0438\u0447",
+            "description": "An explanation about the purpose of this instance.",
+            "id": "/properties/team/items/properties/name",
+            "title": "The name schema",
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "team_url": {
+      "default": "https://www.infoculture.ru/team/",
+      "description": "An explanation about the purpose of this instance.",
+      "id": "/properties/team_url",
+      "title": "The team_url schema",
+      "type": "string"
+    },
+    "website": {
+      "default": "https://infoculture.ru",
+      "description": "An explanation about the purpose of this instance.",
+      "id": "/properties/website",
+      "title": "The website schema",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}
